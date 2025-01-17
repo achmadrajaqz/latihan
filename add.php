@@ -8,32 +8,36 @@
 	<a href="index.php">Go to Home</a>
 	<br/><br/>
  
-	<form action="add.php" method="post" name="form1">
-		<table width="25%" border="0">
-			<tr> 
-				<td>Name</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr> 
-				<td>Email</td>
-				<td><input type="text" name="email"></td>
-			</tr>
-			<tr> 
-				<td>Mobile</td>
-				<td><input type="text" name="mobile"></td>
-			</tr> 
+	<div class="href-target" id="input-types">
+		<h1>Add New User Form</h1>
 
-			<tr>
-				<td>Foto</td>
-				<td><input type="file" name="foto" id="foto"></td>
-			</tr>
+		<form action="add.php" method="post" name="form1">
+			<table width="25%" border="0">
+				<tr> 
+					<td>Name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr> 
+					<td>Email</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr> 
+					<td>Mobile</td>
+					<td><input type="text" name="mobile"></td>
+				</tr> 
 
-			<tr> 
-				<td></td>
-				<td><input type="submit" name="Submit" value="Add" class="btn btn-outline-primary"></td>
-			</tr>
-		</table>
-	</form>
+				<tr>
+					<td>Foto</td>
+					<td><input type="file" name="foto" id="foto"></td>
+				</tr>
+
+				<tr> 
+					<td></td>
+					<td><input type="submit" name="Submit" value="Add" class="btn btn-outline-primary"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
 	
 	<?php
  

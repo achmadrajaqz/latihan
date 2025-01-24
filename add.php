@@ -5,37 +5,52 @@
 </head>
  
 <body>
-	<a href="index.php">Go to Home</a>
-	<br/><br/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand px-5" href="index.php">Website XI TKJ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.php">Home<span class="sr-only"></span></a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="add.php">Add</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
  
 	<div class="href-target" id="input-types">
-		<h1>Add New User Form</h1>
+		<h1 class="text-center py-3">Add New User Form</h1>
 
 		<form action="add.php" method="post" name="form1">
-			<table width="25%" border="0">
-				<tr> 
-					<td>Name</td>
-					<td><input type="text" name="name"></td>
-				</tr>
-				<tr> 
-					<td>Email</td>
-					<td><input type="text" name="email"></td>
-				</tr>
-				<tr> 
-					<td>Mobile</td>
-					<td><input type="text" name="mobile"></td>
-				</tr> 
+			<div class="form-group px-5">
+				<label for="exampleInputName">Full Name</label>
+				<input type="text" name="name" class="form-control" id="exampleInputName" placeholder="Enter your full name">
+			</div>
 
-				<tr>
-					<td>Foto</td>
-					<td><input type="file" name="foto" id="foto"></td>
-				</tr>
+			<div class="form-group px-5">
+				<label for="exampleInputEmail">Email Address</label>
+				<input type="text" name="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address">
+			</div>
 
-				<tr> 
-					<td></td>
-					<td><input type="submit" name="Submit" value="Add" class="btn btn-outline-primary"></td>
-				</tr>
-			</table>
+			<div class="form-group px-5">
+				<label for="exampleInputMobile">Phone Number</label>
+				<input type="text" name="mobile" class="form-control" id="exampleInputMobile" placeholder="Enter your phone number">
+			</div>
+
+			<div class="form-group px-5">
+				<label for="exampleFormControlFile">Upload Your Photo</label>
+				<input type="file" class="form-control-file py-2" id="exampleFormControlFile" name="foto">
+			</div>
+
+			<div class="form-group px-5">
+				<input type="submit" name="Submit" value="Add" class="btn btn-outline-primary">
+			</div>
+			
 		</form>
 	</div>
 	
